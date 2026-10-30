@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin dashboard | FoodBridge</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body data-page="admin">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">♻</span> FoodBridge</a><nav><a href="index.html">Home</a><span id="nav-user" class="nav-user">Administrator</span><button class="link-button" data-logout>Log out</button></nav></header>
+<main class="dashboard">
+  <div class="dashboard-heading"><div><span class="eyebrow">ADMIN WORKSPACE</span><h1>Community impact overview.</h1><p>Monitor donations, requests, deadlines and completed collections.</p></div><span class="role-pill">🛡 Administrator</span></div>
+  <div id="admin-stats" class="stats-grid"></div>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>Donation management</h2><p>Review all donations. Only the admin can permanently delete a record.</p></div><button class="button secondary small" id="export-csv">Export CSV report</button></div><div id="admin-donations" class="table-wrap"></div></section>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>All requests</h2><p>Review request history across the application.</p></div></div><div id="admin-requests" class="table-wrap"></div></section>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>Waste analysis</h2><p>Counts are calculated from the current browser's saved records.</p></div></div><div id="admin-analysis" class="analysis-grid"></div></section>
+  <p class="security-note">This admin screen is for demonstration. Client-side role checks are not secure because users can modify browser data.</p>
+</main>
+<footer><a class="brand" href="index.html">♻ FoodBridge</a><span>Rescue food. Strengthen communities.</span></footer>
+</body></html>
