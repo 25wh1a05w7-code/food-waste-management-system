@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login | FoodBridge</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body data-page="login">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">♻</span> FoodBridge</a><nav><a href="index.html">Home</a><a href="register.html">Register</a></nav></header>
+<main class="auth-layout login-layout">
+  <section class="auth-aside"><span class="eyebrow">WELCOME BACK</span><h1>Let's get good<br><span>food moving.</span></h1><p>Sign in to manage donations, find food, and see the impact of your community.</p><div class="aside-stat"><span>🤝</span><div><b>One connected community</b><small>Donors, receivers and administrators.</small></div></div></section>
+  <section class="form-panel"><div class="form-heading"><h2>Log in</h2><p>Enter your account details below.</p></div>
+    <form id="login-form">
+      <label for="login-email">Email address</label><input id="login-email" name="email" type="email" required placeholder="you@example.com">
+      <label for="login-password">Password</label><input id="login-password" name="password" type="password" required placeholder="Your password">
+      <button class="button primary full" type="submit">Log in</button><p id="login-message" class="form-message" role="status"></p>
+    </form>
+    <div class="demo-box"><b>Admin demonstration login</b><p>Email: <code>admin@foodbridge.demo</code><br>Password: <code>Admin@123</code></p><button class="button secondary full" id="fill-admin" type="button">Fill admin details</button></div>
+    <p class="form-bottom">Don't have an account? <a href="register.html">Register here</a></p>
+    <p class="security-note">Demo only: login checks are client-side and must not be used for real accounts.</p>
+  </section>
+</main>
+<footer><a class="brand" href="index.html">♻ FoodBridge</a><span>Rescue food. Strengthen communities.</span></footer>
+</body></html>
