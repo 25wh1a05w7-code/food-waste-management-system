@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Receiver dashboard | FoodBridge</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body data-page="receiver">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">♻</span> FoodBridge</a><nav><a href="index.html">Home</a><span id="nav-user" class="nav-user"></span><button class="link-button" data-logout>Log out</button></nav></header>
+<main class="dashboard">
+  <div class="dashboard-heading"><div><span class="eyebrow">RECEIVER WORKSPACE</span><h1>Find food that fits your needs.</h1><p>Browse available donations and request suitable food for your organization.</p></div><span class="role-pill">🤲 Food receiver</span></div>
+  <div class="notice"><b>Smart matching:</b> listings are ranked using your area, requested servings and donation urgency. This is a simple rule-based match, not AI.</div>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>Recommended donations</h2><p>Nearby and urgent donations are prioritized where details match.</p></div></div><div id="receiver-donation-list" class="card-grid"></div><div id="receiver-empty" class="empty-state hidden"><span>🔎</span><h3>No suitable donations available</h3><p>Check back later or try a different area.</p></div></section>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>My food requests</h2><p>Follow the approval and collection status of your requests.</p></div></div><div id="receiver-requests" class="table-wrap"></div></section>
+  <section class="panel section-gap"><div class="panel-heading"><div><h2>My community badges</h2><p>Badges are based on completed collections in this demo.</p></div></div><div id="receiver-badges" class="badge-list"></div></section>
+</main>
+<footer><a class="brand" href="index.html">♻ FoodBridge</a><span>Rescue food. Strengthen communities.</span></footer>
+</body></html>
