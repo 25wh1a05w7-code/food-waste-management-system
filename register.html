@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Create account | FoodBridge</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body data-page="register">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">♻</span> FoodBridge</a><nav><a href="index.html">Home</a><a href="login.html">Login</a></nav></header>
+<main class="auth-layout">
+  <section class="auth-aside"><span class="eyebrow">JOIN THE COMMUNITY</span><h1>Small actions.<br><span>Meaningful impact.</span></h1><p>Create an account to share surplus food or help connect it with people who need it.</p><div class="aside-stat"><span>🥗</span><div><b>Every listing matters</b><small>Help food find a useful destination.</small></div></div></section>
+  <section class="form-panel"><div class="form-heading"><h2>Create an account</h2><p>Choose the role that matches how you'll use FoodBridge.</p></div>
+    <form id="register-form">
+      <label for="reg-name">Full name / organization name</label><input id="reg-name" name="name" required maxlength="80" placeholder="e.g. Green Garden NGO">
+      <label for="reg-email">Email address</label><input id="reg-email" name="email" type="email" required maxlength="120" placeholder="you@example.com">
+      <label for="reg-phone">Phone number (optional)</label><input id="reg-phone" name="phone" type="tel" maxlength="20" placeholder="Contact number">
+      <label for="reg-area">Area / PIN code</label><input id="reg-area" name="area" required maxlength="100" placeholder="e.g. Miyapur, Hyderabad">
+      <label for="reg-role">I want to join as</label><select id="reg-role" name="role" required><option value="donor">Food donor (restaurant, canteen, event)</option><option value="receiver">Food receiver (NGO / community group)</option></select>
+      <label for="reg-password">Password</label><input id="reg-password" name="password" type="password" minlength="6" required placeholder="At least 6 characters">
+      <button class="button primary full" type="submit">Create account</button>
+      <p id="register-message" class="form-message" role="status"></p>
+    </form>
+    <p class="form-bottom">Already registered? <a href="login.html">Log in</a></p>
+    <p class="security-note">Demo only: accounts are stored in this browser and are not secure for real-world use.</p>
+  </section>
+</main>
+<footer><a class="brand" href="index.html">♻ FoodBridge</a><span>Rescue food. Strengthen communities.</span></footer>
+</body></html>
